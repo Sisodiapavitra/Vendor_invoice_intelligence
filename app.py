@@ -79,6 +79,7 @@ def show_batch_upload(required_columns, prediction_function, uploader_key):
 		predictions.to_csv(index=False).encode("utf-8"),
 		file_name="predictions.csv",
 		mime="text/csv",
+		key=f"download_button_{uploader_key}"
 	)
 
 
