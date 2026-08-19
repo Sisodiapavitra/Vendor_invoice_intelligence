@@ -12,11 +12,6 @@ A Streamlit application for vendor invoice analysis. It supports freight cost pr
 
 ## Quick Start
 
-Open PowerShell in the project directory:
-
-```powershell
-cd "C:\Users\Pavitra Sisodia\Vendor-invoice-prediction"
-```
 
 Install the dependencies:
 
@@ -36,12 +31,13 @@ Open `http://localhost:8501` in your browser.
 
 ```text
 app.py                              Streamlit application
-data/                               Database and sample CSV files
+data/                               Database
 freight_cost_prediction/            Freight model training and evaluation
 invoice_flagging/                   Invoice risk model training and evaluation
 inference/                          Standalone prediction scripts
 models/                             Trained model artifacts
 notebooks/                          Exploratory notebooks
+Testing_data                        sample CSV files for testing
 requirements.txt                    Python dependencies
 ```
 
@@ -64,7 +60,7 @@ Dollars
 
 The application adds a `Predicted_Freight` column to the results.
 
-Sample file: `data/sample_freight_prediction.csv`
+Sample file: `Testing_data/sample_freight_prediction.csv`
 
 ### Invoice Flagging
 
@@ -83,7 +79,7 @@ The application adds:
 - `Predicted_flag`: `1` means flagged and `0` means clear.
 - `Risk`: `Flagged` or `Clear`.
 
-Sample file: `data/sample_invoice_flagging.csv`
+Sample file: `Testing_data/sample_invoice_flagging.csv`
 
 Column names are case-sensitive.
 
