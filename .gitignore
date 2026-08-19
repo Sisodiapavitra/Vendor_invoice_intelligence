@@ -1,0 +1,40 @@
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter and notebook cache
+.ipynb_checkpoints/
+
+# Local data and database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated machine-learning artifacts
+models/*.pkl
+freight_cost_prediction/models/*.pkl
+
+# Streamlit local configuration and secrets
+.streamlit/secrets.toml
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# VS Code and local tooling
+.vscode/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
